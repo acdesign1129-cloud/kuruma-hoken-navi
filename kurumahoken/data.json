@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "自動車保険かんたん診断",
+    "version": "1.0",
+    "totalQuestions": 7
+  },
+  "questions": [
+    {
+      "id": 0,
+      "text": "保険に何を一番求めますか？",
+      "sub": "直感で選んでください",
+      "options": [
+        { "value": "cost",    "icon": "💴", "label": "とにかく保険料を安くしたい" },
+        { "value": "support", "icon": "🛡️", "label": "事故のとき安心できるサポートが欲しい" },
+        { "value": "balance", "icon": "⚖️", "label": "価格と安心感のバランスを取りたい" }
+      ]
+    },
+    {
+      "id": 1,
+      "text": "ネット保険の経験はありますか？",
+      "sub": "現在の状況を教えてください",
+      "options": [
+        { "value": "beginner",    "icon": "😕", "label": "初めて / よくわからない" },
+        { "value": "some",        "icon": "🙂", "label": "少し経験がある" },
+        { "value": "experienced", "icon": "😄", "label": "ネット保険に慣れている" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "家族も車を運転しますか？",
+      "sub": "同居のご家族について教えてください",
+      "options": [
+        { "value": "family_yes", "icon": "👨‍👩‍👧", "label": "家族も運転する" },
+        { "value": "family_no",  "icon": "🙋",     "label": "自分だけ運転する" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "車の使い方は？",
+      "sub": "主な用途を選んでください",
+      "options": [
+        { "value": "commute",  "icon": "🏢", "label": "通勤・通学に毎日使う" },
+        { "value": "weekend",  "icon": "📅", "label": "週末や休日にたまに使う" },
+        { "value": "frequent", "icon": "🛣️", "label": "仕事や移動で頻繁に使う" }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "年齢層を教えてください",
+      "sub": "保険料の最適化に使います",
+      "options": [
+        { "value": "age_20s", "icon": "🧑", "label": "20代" },
+        { "value": "age_30s", "icon": "🧑", "label": "30代" },
+        { "value": "age_40s", "icon": "🧑", "label": "40〜50代" },
+        { "value": "age_60s", "icon": "🧓", "label": "60代以上" }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "ロードサービスや万一の補償は重視しますか？",
+      "sub": "車が動かなくなったときのサービスです",
+      "options": [
+        { "value": "road_yes", "icon": "🚛", "label": "はい、充実していると安心" },
+        { "value": "road_no",  "icon": "➖", "label": "あまり気にしない" }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "車が壊れたときの修理代などの補償が欲しい？",
+      "sub": "自分の車の修理・損害をカバーする「車両保険」のことです",
+      "options": [
+        { "value": "repair_yes",  "icon": "🔧", "label": "はい、しっかりカバーしてほしい" },
+        { "value": "repair_some", "icon": "🤔", "label": "あればいいが、保険料も気になる" },
+        { "value": "repair_no",   "icon": "🙅", "label": "不要 / 保険料を下げたい" }
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "name": "SBI損保",
+      "scores": { "cost": 5, "support": 2, "beginner": 5, "road": 3, "family": 5, "frequent": 5, "compensation": 5 },
+      "description": "保険料を抑えたい人向け。車両保険も含めたシンプルな補償でネット割引が大きく、コスパ最重視の方に。"
+    },
+    {
+      "name": "ソニー損保",
+      "scores": { "cost": 3, "support": 5, "beginner": 5, "road": 4, "family": 4, "frequent": 5, "compensation": 5 },
+      "description": "走行距離連動型で公平な保険料。事故対応・サポートと補償内容が業界トップクラス。"
+    },
+    {
+      "name": "おとなの自動車保険",
+      "scores": { "cost": 4, "support": 4, "beginner": 4, "road": 4, "family": 3, "frequent": 3, "compensation": 3 },
+      "description": "30〜50代のベテランドライバー向け。年齢層に合わせた保険料最適化が強み。"
+    },
+    {
+      "name": "東京海上ダイレクト",
+      "scores": { "cost": 2, "support": 5, "beginner": 4, "road": 5, "family": 2, "frequent": 3, "compensation": 5 },
+      "description": "大手グループの安心感。補償内容・ロードサービスともに万全で、しっかりカバーを求める方に。"
+    },
+    {
+      "name": "三井ダイレクト",
+      "scores": { "cost": 3, "support": 3, "beginner": 3, "road": 4, "family": 5, "frequent": 4, "compensation": 3 },
+      "description": "三井住友グループの安定性。幅広い補償オプションとファミリー向けの柔軟な設計。"
+    },
+    {
+      "name": "アクサダイレクト",
+      "scores": { "cost": 4, "support": 3, "beginner": 2, "road": 4, "family": 2, "frequent": 4, "compensation": 2 },
+      "description": "外資系の品質管理と24時間ロードサービスが充実。保険知識がある方向け。"
+    },
+    {
+      "name": "チューリッヒ",
+      "scores": { "cost": 2, "support": 2, "beginner": 3, "road": 5, "family": 5, "frequent": 2, "compensation": 4 },
+      "description": "スイス系外資の信頼性。弁護士費用特約など補償オプションが豊富でロードサービスが最高水準。"
+    }
+  ],
+  "scoringRules": [
+    {
+      "questionId": 0,
+      "cases": [
+        { "answerValue": "cost",    "scoreKey": "cost",              "multiplier": 2,   "tag": "コスト◎",   "tagThreshold": 4 },
+        { "answerValue": "support", "scoreKey": "support",           "multiplier": 2,   "tag": "サポート◎", "tagThreshold": 4 },
+        { "answerValue": "balance", "scoreKeys": ["cost","support"], "multiplier": 1,   "tag": "バランス◎", "tagCondition": "both>=3" }
+      ]
+    },
+    {
+      "questionId": 1,
+      "cases": [
+        { "answerValue": "beginner",    "scoreKey": "beginner", "multiplier": 1.5, "tag": "初心者◎", "tagThreshold": 4 },
+        { "answerValue": "some",        "scoreKey": "beginner", "multiplier": 1 },
+        { "answerValue": "experienced", "scoreKey": "beginner", "multiplier": 0 }
+      ]
+    },
+    {
+      "questionId": 2,
+      "cases": [
+        { "answerValue": "family_yes", "scoreKey": "family", "multiplier": 1.5, "tag": "ファミリー◎", "tagThreshold": 4 },
+        { "answerValue": "family_no",  "scoreKey": "family", "multiplier": 0 }
+      ]
+    },
+    {
+      "questionId": 3,
+      "cases": [
+        { "answerValue": "commute",  "scoreKey": "frequent", "multiplier": 1, "tag": "多走行◎", "tagThreshold": 4 },
+        { "answerValue": "frequent", "scoreKey": "frequent", "multiplier": 1, "tag": "多走行◎", "tagThreshold": 4 },
+        { "answerValue": "weekend",  "scoreKey": "frequent", "multiplier": 0 }
+      ]
+    },
+    {
+      "questionId": 4,
+      "cases": [
+        { "answerValue": "age_40s", "companyBonus": { "おとなの自動車保険": 6 }, "tag": "年齢層一致" },
+        { "answerValue": "age_20s", "companyBonus": { "SBI損保": 4 } }
+      ]
+    },
+    {
+      "questionId": 5,
+      "cases": [
+        { "answerValue": "road_yes", "scoreKey": "road", "multiplier": 1, "tag": "ロード◎", "tagThreshold": 4 },
+        { "answerValue": "road_no",  "scoreKey": "road", "multiplier": 0 }
+      ]
+    },
+    {
+      "questionId": 6,
+      "cases": [
+        { "answerValue": "repair_yes",  "scoreKey": "compensation", "multiplier": 2,  "tag": "車両補償◎", "tagThreshold": 4 },
+        { "answerValue": "repair_some", "scoreKey": "compensation", "multiplier": 1,  "tag": "補償充実",  "tagThreshold": 4 },
+        { "answerValue": "repair_no",   "invertScore": true,        "baseValue": 6,   "scoreKey": "compensation" }
+      ]
+    }
+  ],
+  "typeRules": [
+    { "conditions": { "6": "repair_yes", "0": "support" }, "label": "手厚い補償重視タイプ" },
+    { "conditions": { "6": "repair_no",  "0": "cost"    }, "label": "コスト最優先タイプ" },
+    { "conditions": { "0": "cost",       "1": "beginner" }, "label": "コスト重視・初心者タイプ" },
+    { "conditions": { "0": "support"                     }, "label": "安心・サポート重視タイプ" },
+    { "conditions": { "2": "family_yes"                  }, "label": "ファミリー重視タイプ" },
+    { "conditions": {},                                      "label": "バランス重視タイプ" }
+  ],
+  "reasonMap": [
+    { "questionId": 0, "answerValue": "cost",        "text": "保険料の安さを重視している" },
+    { "questionId": 0, "answerValue": "support",     "text": "事故対応・サポートを重視している" },
+    { "questionId": 0, "answerValue": "balance",     "text": "コストと安心感のバランスを重視している" },
+    { "questionId": 1, "answerValue": "beginner",    "text": "ネット保険は初めて" },
+    { "questionId": 2, "answerValue": "family_yes",  "text": "家族も利用する" },
+    { "questionId": 3, "answerValue": "commute",     "text": "毎日の通勤に使用している" },
+    { "questionId": 3, "answerValue": "frequent",    "text": "走行距離が多め" },
+    { "questionId": 4, "answerValue": "age_20s",     "text": "20代である" },
+    { "questionId": 4, "answerValue": "age_40s",     "text": "40〜50代である" },
+    { "questionId": 5, "answerValue": "road_yes",    "text": "ロードサービスを重視している" },
+    { "questionId": 6, "answerValue": "repair_yes",  "text": "修理・車両補償をしっかりカバーしたい" },
+    { "questionId": 6, "answerValue": "repair_some", "text": "補償と保険料のバランスを取りたい" },
+    { "questionId": 6, "answerValue": "repair_no",   "text": "車両補償は不要・保険料を抑えたい" }
+  ]
+}
